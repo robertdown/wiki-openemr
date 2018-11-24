@@ -64,7 +64,7 @@ class openemrTemplate extends QuickTemplate {
 
 <div class="container_webpage">
 <div style="font-size:150%">
-<?php require("../template/header.html"); ?>
+<?php require("template/header.html"); ?>
 </div>
 <div class="contentfooterwrapper">
 
@@ -203,7 +203,7 @@ if($this->data['copyrightico']) { ?>
 <?php endif; ?>
 
 <div style="font-size:150%">
-<?php require("../template/footer.html"); ?>
+<?php require("template/footer.html"); ?>
 </div>
 </div>
 </div>
