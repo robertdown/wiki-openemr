@@ -1,0 +1,76 @@
+{
+	"name": "Openemr",
+	"type": "skin",
+	"ValidSkinNames": {
+		"openemr": {
+			"class": "SkinMustache",
+			"args": [ {
+				"name": "openemr",
+				"responsive": true,
+				"templateDirectory": "skins/Openemr/templates",
+				"styles": [
+					"skins.openemr"
+				],
+				"messages": [
+					"sitetitle",
+					"search",
+					"tagline",
+					"navigation-heading"
+				],
+				"scripts": [
+					"skins.openemr.js"
+				]
+			} ]
+		}
+	},
+	"MessagesDirs": {
+		"Example": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.openemr": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content": true,
+				"content-parser-output": true,
+				"interface": true,
+				"interface-category": true,
+				"logo": true
+			},
+			"styles": {
+				"resources/bootstrap_1.min.css": {},
+				"resources/screen-common.less": {
+					"media": "screen"
+				},
+				"resources/screen-desktop.less": {
+					"media": "screen and (min-width: 751px)"
+				},
+				"resources/screen-mobile.less": {
+					"media": "screen and (max-width: 750px)"
+				},
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.openemr.js": {
+			"scripts": [
+				"resources/bootstrap_1.bundle.min.js",
+				"resources/main.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Openemr"
+	},
+	"ResourceModuleSkinStyles": {
+		"openemr": {
+			"+ext.echo.styles.badge": "resources/extensions/echo.styles.badge.less"
+		}
+	},
+	"manifest_version": 1
+}

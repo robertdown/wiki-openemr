@@ -2,7 +2,7 @@
 <FilesMatch "\.(html|htm|shtml)$">
 Header set Cache-Control "max-age=7200, must-revalidate"
 </FilesMatch>
-<FilesMatch "(screenstyle.css|header.txt|footer.txt)$">
+<FilesMatch "(header.txt|footer.txt)$">
 Header set Cache-Control "max-age=7200, must-revalidate"
 </FilesMatch>
 
