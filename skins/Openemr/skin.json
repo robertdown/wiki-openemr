@@ -38,7 +38,7 @@
 				"content-parser-output": true,
 				"interface": true,
 				"interface-category": true,
-				"logo": true
+				"logo": false
 			},
 			"styles": {
 				"resources/bootstrap_1.min.css": {},
